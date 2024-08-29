@@ -15,6 +15,12 @@ module.exports = {
       },
       borderColor: {
         "borderColor": "#1E2D3D"
+      },
+      screens: {
+        "ssm": "360px",
+        "sssm": "384px",
+        "ssssm": "480px",
+        "3xl": "1792px"
       }
     },
   },
