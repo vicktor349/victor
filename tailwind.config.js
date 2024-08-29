@@ -14,7 +14,8 @@ module.exports = {
         "primary": "#607B96"
       },
       borderColor: {
-        "borderColor": "#1E2D3D"
+        "borderColor": "#1E2D3D",
+        "borderPrimary": "#FEA55F"
       },
       screens: {
         "ssm": "360px",
