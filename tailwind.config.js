@@ -12,6 +12,9 @@ module.exports = {
       },
       colors: {
         "primary": "#607B96"
+      },
+      borderColor: {
+        "borderColor": "#1E2D3D"
       }
     },
   },
