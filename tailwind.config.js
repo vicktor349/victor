@@ -11,7 +11,10 @@ module.exports = {
         "bgColor": "#011627"
       },
       colors: {
-        "primary": "#607B96"
+        "primary": "#607B96",
+        "secondary": "#4D5BCE",
+        "accent": "#43D9AD",
+        "secondaryAccent": "#E99287"
       },
       borderColor: {
         "borderColor": "#1E2D3D",
