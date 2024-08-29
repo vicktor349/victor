@@ -66,35 +66,33 @@ const Navbar = () =>
                     </div>
                 </div>
                 {/* MOBILE DRAWER */}
-                <div className="absolute top-14 w-full bg-bgColor h-dvh">
-                    {
-                        isOpened && (
-                            <>
-                                {navlinks.map((navlink) => (
-                                    <div key={navlink.id}>
-                                        <div className="border-borderColor border-b py-4">
-                                            <Link className="text-white ml-5" onClick={handleMenuToggle} href={navlink.link}>{navlink.name}</Link>
-                                        </div>
-                                    </div>
-                                ))}
-                                <div className="fixed bottom-0 left-0 w-full flex items-center justify-between px-5 h-[49px] border-t border-borderColor">
-                                    <p>find me in:</p>
-                                    <div className="flex items-center gap-x-6">
-                                        <span className="relative flex items-center">
-                                            <BsTwitterX />
-                                            <span className="absolute right-[-12px] w-[1px] h-6 bg-borderColor"></span>
-                                        </span>
-                                        <span className="relative flex items-center">
-                                            <BsWhatsapp />
-                                            <span className="absolute right-[-12px] w-[1px] h-6 bg-borderColor"></span>
-                                        </span>
-                                        <BsTelegram />
+                {
+                    isOpened && (
+                        <div className="absolute top-14 w-full bg-bgColor h-dvh">
+                            {navlinks.map((navlink) => (
+                                <div key={navlink.id}>
+                                    <div className="border-borderColor border-b py-4">
+                                        <Link className="text-white ml-5" onClick={handleMenuToggle} href={navlink.link}>{navlink.name}</Link>
                                     </div>
                                 </div>
-                            </>
-                        )
-                    }
-                </div>
+                            ))}
+                            <div className="fixed bottom-0 left-0 w-full flex items-center justify-between px-5 h-[49px] border-t border-borderColor">
+                                <p>find me in:</p>
+                                <div className="flex items-center gap-x-6">
+                                    <span className="relative flex items-center">
+                                        <BsTwitterX />
+                                        <span className="absolute right-[-12px] w-[1px] h-6 bg-borderColor"></span>
+                                    </span>
+                                    <span className="relative flex items-center">
+                                        <BsWhatsapp />
+                                        <span className="absolute right-[-12px] w-[1px] h-6 bg-borderColor"></span>
+                                    </span>
+                                    <BsTelegram />
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
             </div>
         </>
     )
