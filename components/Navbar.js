@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { IoIosClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsTelegram, BsTwitterX, BsWhatsapp } from "react-icons/bs";
+import { useRouter } from 'next/router';
 
 const Navbar = () =>  
 {
@@ -18,7 +19,8 @@ const Navbar = () =>
     {
         setIsOpened(!isOpened)
     }
-
+    const { pathname } = useRouter()
+    const activeColor = (p) => pathname === p ? "#fff" : "#607B96"
     return (
         <>
             <Head>
@@ -32,8 +34,12 @@ const Navbar = () =>
                         </div>
                         <div className="hidden md:flex items-center">
                             {navlinks.slice(0, 3).map((navlink) => (
-                                <div key={navlink.id} className="border-borderColor border-r w-fit px-6 h-14 flex items-center">
-                                    <Link className="hover:text-white" href={navlink.link}>{navlink.name}</Link>
+                                <div key={navlink.id} className="border-borderColor border-r w-fit px-6 h-14 flex items-center" style={{ borderBottom: pathname === navlink.link ? "2px solid #FEA55F" : "none" }}>
+                                    <Link
+                                        style={{ color: activeColor(navlink.link) }}
+                                        className="hover:text-white" href={navlink.link}>
+                                        {navlink.name}
+                                    </Link>
                                 </div>
                             ))}
                         </div>
