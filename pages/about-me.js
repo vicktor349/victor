@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import AboutContent from '@/components/aboutme/AboutContent';
 import AboutDisplay from '@/components/aboutme/AboutDisplay';
 import Hobbies from '@/components/aboutme/Hobbies/Hobbies';
@@ -5,7 +6,6 @@ import Personal from '@/components/aboutme/personal/Personal';
 import Professional from '@/components/aboutme/Professional/Professional';
 import SideNavbar from '@/components/aboutme/SideNavbar';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
 
 
 const aboutme = () =>
