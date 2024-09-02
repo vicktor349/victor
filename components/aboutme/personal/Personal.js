@@ -40,7 +40,7 @@ const Personal = () =>
             {/* BIO */}
             <div>
                 {open &&
-                    <div className='ssm:pl-14 sm:pl-7 sm:mt-2'>
+                    <div className='ssm:pl-14 lg:pl-7 sm:mt-2'>
                         <div className='flex items-center text-primary hover:text-white hover:cursor-pointer w-fit space-x-2 text-sm' onClick={handleBioToggle}>
                             {bioOpen ? <MdKeyboardArrowDown size={14} /> : <MdKeyboardArrowRight size={14} />}
                             {bioOpen ? <FaFolderOpen color='#E99287' size={14} /> : <FaFolder size={14} color='#E99287' />}
@@ -61,7 +61,7 @@ const Personal = () =>
             {/* EDUCATION */}
             <div>
                 {open &&
-                    <div className='ssm:pl-14 sm:pl-7 sm:mt-2'>
+                    <div className='ssm:pl-14 lg:pl-7 sm:mt-2'>
                         <div className='flex items-center text-primary hover:text-white hover:cursor-pointer w-fit space-x-2 text-sm' onClick={handleEducationToggle}>
                             {educationOpen ? <MdKeyboardArrowDown size={14} /> : <MdKeyboardArrowRight size={14} />}
                             {educationOpen ? <FaFolderOpen color='#3A49A4' size={14} /> : <FaFolder size={14} color='#3A49A4' />}
