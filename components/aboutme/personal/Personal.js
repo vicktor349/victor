@@ -30,8 +30,8 @@ const Personal = () =>
     };
 
     return (
-        <div className='select-none'>
-            <div className='lg:border-b border-borderColor flex items-center h-9 pl-8 lg:pl-5 text-sm ssssm:text-base'>
+        <div className='select-none text-sm'>
+            <div className='lg:border-b border-borderColor flex items-center h-9 pl-8 lg:pl-5'>
                 <div className='flex items-center hover:cursor-pointer' onClick={handleToggle}>
                     {open ? <MdArrowDropDown size={24} /> : <MdOutlineArrowRight size={24} />}
                     <p className='text-sm'>personal-info</p>
@@ -40,7 +40,7 @@ const Personal = () =>
             {/* BIO */}
             <div>
                 {open &&
-                    <div className='pl-7 mt-2'>
+                    <div className='ssm:pl-14 sm:pl-7 sm:mt-2'>
                         <div className='flex items-center text-primary hover:text-white hover:cursor-pointer w-fit space-x-2 text-sm' onClick={handleBioToggle}>
                             {bioOpen ? <MdKeyboardArrowDown size={14} /> : <MdKeyboardArrowRight size={14} />}
                             {bioOpen ? <FaFolderOpen color='#E99287' size={14} /> : <FaFolder size={14} color='#E99287' />}
@@ -50,7 +50,7 @@ const Personal = () =>
                 }
                 {bioOpen &&
                     <div
-                        className='ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
+                        className='ssm:ml-20 sm:ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
                         onClick={() => openFile('Bio.js')}
                     >
                         <RiJavascriptFill color='#f0db4f' />
@@ -61,7 +61,7 @@ const Personal = () =>
             {/* EDUCATION */}
             <div>
                 {open &&
-                    <div className='pl-7 mt-2'>
+                    <div className='ssm:pl-14 sm:pl-7 sm:mt-2'>
                         <div className='flex items-center text-primary hover:text-white hover:cursor-pointer w-fit space-x-2 text-sm' onClick={handleEducationToggle}>
                             {educationOpen ? <MdKeyboardArrowDown size={14} /> : <MdKeyboardArrowRight size={14} />}
                             {educationOpen ? <FaFolderOpen color='#3A49A4' size={14} /> : <FaFolder size={14} color='#3A49A4' />}
@@ -71,7 +71,7 @@ const Personal = () =>
                 }
                 {educationOpen &&
                     <div
-                        className='ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
+                        className='ssm:ml-20 sm:ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
                         onClick={() => openFile('AUL.js')}
                     >
                         <RiJavascriptFill color='#f0db4f' />
