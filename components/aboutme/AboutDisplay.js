@@ -43,7 +43,7 @@ const AboutDisplay = () =>
                         className={`text-sm flex items-center px-4 py-2 cursor-pointer border-borderColor border-r ${activeFile === file ? 'text-white' : ''}`}
                         onClick={() => openFile(file)}
                     >
-                        <span>{file}</span>
+                        <span className='select-none'>{file}</span>
                         <IoMdClose size={16} className='ml-2' onClick={(e) => { e.stopPropagation(); closeFile(file); }} />
                     </div>
                 ))}
