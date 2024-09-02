@@ -50,7 +50,7 @@ const AboutDisplay = () =>
             </div>
             {/* CONTENT BEING DISPLAYED */}
             <div className='mx-8 mt-14 lg:mx-0 lg:mt-0 lg:border-r lg:border-borderColor lg:h-[calc(100%-95px)] lg:w-[23rem] xl:w-[33rem] 2xl:w-[43rem] 3xl:w-[48rem]'>
-                <div className='pt-8 pl-8 w-[45rem] text-sm'>
+                <div className='md:pt-8 md:pl-8 ssm:w-full xl:w-[42rem] text-sm leading-7'>
                     {activeFile && components[activeFile] ? React.createElement(components[activeFile]) :
                         <div>
                         /** <br />
