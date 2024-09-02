@@ -4,7 +4,7 @@ import { BsGithub, BsTwitterX, BsWhatsapp } from 'react-icons/bs'
 const Footer = () =>
 {
     return (
-        <div className="text-primary border-borderColor border-t w-full absolute bottom-0 left-0 bg-bgColor z-50">
+        <div className="text-primary border-borderColor border-t w-full bottom-0 left-0 bg-bgColor z-50">
             <div className="flex ssm:justify-around ssssm:justify-between">
                 <div className="flex items-center h-14">
                     <p className="ssm:w-32 ssssm:w-44 2xl:w-48 3xl:w-56 border-r border-borderColor h-full flex items-center justify-center">
