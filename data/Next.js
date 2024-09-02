@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Bio = () =>
+const Next = () =>
 {
     return (
         <div>
@@ -19,4 +19,4 @@ const Bio = () =>
     )
 }
 
-export default Bio
+export default Next
