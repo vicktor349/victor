@@ -41,7 +41,7 @@ const Personal = () =>
             <div>
                 {open &&
                     <div className='ssm:pl-14 lg:pl-7 sm:mt-2'>
-                        <div className='flex items-center text-primary hover:text-white hover:cursor-pointer w-fit space-x-2 text-sm' onClick={handleBioToggle}>
+                        <div className='flex items-center text-primary hover:text-white hover:cursor-pointer h-fit w-fit space-x-2 text-sm' onClick={handleBioToggle}>
                             {bioOpen ? <MdKeyboardArrowDown size={14} /> : <MdKeyboardArrowRight size={14} />}
                             {bioOpen ? <FaFolderOpen color='#E99287' size={14} /> : <FaFolder size={14} color='#E99287' />}
                             <p>Bio</p>
@@ -50,7 +50,7 @@ const Personal = () =>
                 }
                 {bioOpen &&
                     <div
-                        className='ssm:ml-20 sm:ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
+                        className='ssm:ml-20 h-fit sm:ml-14 mt-1 flex items-center space-x-1 text-sm text-primary hover:text-white w-fit hover:cursor-pointer'
                         onClick={() => openFile('Bio.js')}
                     >
                         <RiJavascriptFill color='#f0db4f' />
