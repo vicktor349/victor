@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 
-const SideNavbar = ({ activeComponent, setActiveComponent }) =>
+const SideNavbar = ({ setActiveComponent }) =>
 {
     const menuLists = [
         { location: "Personal", icon: "/images/about/personal-info-icon.svg" },
@@ -10,8 +10,8 @@ const SideNavbar = ({ activeComponent, setActiveComponent }) =>
         { location: "Hobbies", icon: "/images/about/hobbies-icon.svg", },
     ];
     return (
-        <div className='hidden lg:flex flex-col items-center border-r border-borderColor h-full w-16'>
-            <div className='pt-20 space-y-10'>
+        <div className='lg:flex lg:flex-col items-center lg:border-r border-borderColor lg:h-full lg:w-16'>
+            <div className='lg:pt-20 lg:space-y-10 flex items-center mx-10 h-10 justify-between lg:grid'>
                 {menuLists.map((list) => (
                     <div
                         key={list.location}
