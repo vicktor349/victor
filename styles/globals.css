@@ -6,3 +6,11 @@ body {
   background-color: #011627;
   font-family: 'Fira Code';
 }
+
+.keyword {
+  color: #FEA55F;
+  font-weight: bold;
+}
+.custom-word{
+  color: #C98BDF;
+}
