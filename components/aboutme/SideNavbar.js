@@ -11,7 +11,7 @@ const SideNavbar = ({ setActiveComponent }) =>
     ];
     return (
         <div className='lg:flex lg:flex-col items-center lg:border-r border-borderColor lg:h-full lg:w-16'>
-            <div className='lg:pt-20 lg:space-y-10 flex items-center mx-10 h-10 justify-between lg:grid'>
+            <div className='lg:pt-20 lg:space-y-10 lg:grid lg:mx-0 lg:h-0 flex items-center mx-10 h-10 justify-between'>
                 {menuLists.map((list) => (
                     <div
                         key={list.location}
