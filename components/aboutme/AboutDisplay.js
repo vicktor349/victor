@@ -34,7 +34,7 @@ const AboutDisplay = () =>
     }, [openedFiles]);
 
     return (
-        <div className='lg:w-[25rem] xl:w-[35rem] 2xl:w-[45rem] 3xl:w-[50rem] border-r border-borderColor h-full'>
+        <div className='lg:w-[25rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[46rem] border-r border-borderColor h-full'>
             {/* TAB FOR DISPLAYING FILES OPENED */}
             <div className='border-b border-borderColor text-primary pt-[59.19px] h-[5.95rem] hidden lg:flex items-center overflow-x-auto'>
                 {openedFiles.map((file) => (
@@ -49,8 +49,8 @@ const AboutDisplay = () =>
                 ))}
             </div>
             {/* CONTENT BEING DISPLAYED */}
-            <div className='mx-5 sm:mx-8 mt-8 md:mt-0 lg:mx-0 lg:mt-0 lg:border-r lg:border-borderColor lg:h-[calc(100%-95px)] lg:w-[23rem] xl:w-[33rem] 2xl:w-[43rem] 3xl:w-[48rem]'>
-                <div className='md:pt-8 md:pl-8 ssm:w-full xl:w-[42rem] text-sm leading-7 h-dvh lg:h-fit'>
+            <div className='mx-5 sm:mx-8 mt-8 md:mt-0 lg:mx-0 lg:mt-0 lg:border-r lg:border-borderColor lg:h-[calc(100%-95px)] lg:w-[23rem] xl:w-[33rem] 2xl:w-[38rem] 3xl:w-[44rem]'>
+                <div className='md:pt-8 md:pl-8 ssm:w-full xl:w-fit text-sm lg:text-[0.75rem] 2xl:text-sm 2xl:leading-7 lg:h-fit'>
                     {activeFile && components[activeFile] ? React.createElement(components[activeFile]) :
                         <div>
                         /** <br />
