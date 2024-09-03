@@ -5,7 +5,7 @@ const Next = () =>
     return (
         <div>
             <p> /**</p>
-            <p>* About</p>
+            <p>* NEXT</p>
             <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
             <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
             <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
