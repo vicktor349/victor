@@ -6,6 +6,7 @@ import Personal from '@/components/aboutme/personal/Personal';
 import Professional from '@/components/aboutme/Professional/Professional';
 import SideNavbar from '@/components/aboutme/SideNavbar';
 import { useRouter } from 'next/router';
+import CodeSnippet from '@/components/aboutme/CodeSnippet ';
 
 
 const aboutme = () =>
@@ -43,8 +44,11 @@ const aboutme = () =>
             <div className="lg:flex-2 lg:flex items-center lg:justify-center space-y-1">
                 <AboutContent renderComponent={renderComponent} />
             </div>
-            <div className='flex-1'>
+            <div className='flex-2'>
                 <AboutDisplay />
+            </div>
+            <div className='flex-1 mt-[94.2px] '>
+                <CodeSnippet />
             </div>
         </div>
     );
