@@ -9,13 +9,16 @@ module.exports = {
     extend: {
       backgroundColor: {
         "bgColor": "#011627",
-        "background": "#1E2D3D"
+        "background": "#1E2D3D",
+        "cardBackground": "#011221",
+        "buttonBackground": "#1C2B3A"
       },
       colors: {
         "primary": "#607B96",
         "secondary": "#4D5BCE",
         "accent": "#43D9AD",
-        "secondaryAccent": "#E99287"
+        "secondaryAccent": "#E99287",
+        "secondaryText": "#5565E8"
       },
       borderColor: {
         "borderColor": "#1E2D3D",
