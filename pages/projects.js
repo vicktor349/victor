@@ -60,30 +60,30 @@ const project = () =>
                         src={"/images/projects/admindashboard.png"}
                         projectUrl="https://administratordash.vercel.app/"
                     />
-                    <ProjectCard projectNumber="2" projectName="Admin Dashboard"
-                        text="The dashboard displays key metrics, recent orders, and top sales platforms"
-                        src={"/images/projects/admindashboard.png"}
-                        projectUrl="https://administratordash.vercel.app/"
+                    <ProjectCard projectNumber="2" projectName="Nest Mart-Ecommerce"
+                        text="An ecommerce application that enables users to browse, buy, and manage products or services online."
+                        src={"/images/projects/nestmart.png"}
+                        projectUrl="https://nestmart-eight.vercel.app/"
                     />
-                    <ProjectCard projectNumber="3" projectName="Admin Dashboard"
-                        text="The dashboard displays key metrics, recent orders, and top sales platforms"
-                        src={"/images/projects/admindashboard.png"}
-                        projectUrl="https://administratordash.vercel.app/"
+                    <ProjectCard projectNumber="3" projectName="Asake Beauty"
+                        text="Listing platform where users can add listings, browse listing and contact business owners"
+                        src={"/images/projects/asakebeauty.png"}
+                        projectUrl="https://aday-ten.vercel.app/"
                     />
-                    <ProjectCard projectNumber="4" projectName="Admin Dashboard"
-                        text="The dashboard displays key metrics, recent orders, and top sales platforms"
-                        src={"/images/projects/admindashboard.png"}
-                        projectUrl="https://administratordash.vercel.app/"
+                    <ProjectCard projectNumber="4" projectName="Idak"
+                        text="One page application displaying listings"
+                        src={"/images/projects/Idak.png"}
+                        projectUrl="https://idak.vercel.app/"
                     />
-                    <ProjectCard projectNumber="5" projectName="Admin Dashboard"
-                        text="The dashboard displays key metrics, recent orders, and top sales platforms"
-                        src={"/images/projects/admindashboard.png"}
-                        projectUrl="https://administratordash.vercel.app/"
+                    <ProjectCard projectNumber="5" projectName="Nuntium"
+                        text="Mini blog displaying various Trending articles"
+                        src={"/images/projects/nuntium.png"}
+                        projectUrl="https://nuntium-zeta.vercel.app/"
                     />
-                    <ProjectCard projectNumber="6" projectName="Admin Dashboard"
-                        text="The dashboard displays key metrics, recent orders, and top sales platforms"
-                        src={"/images/projects/admindashboard.png"}
-                        projectUrl="https://administratordash.vercel.app/"
+                    <ProjectCard projectNumber="6" projectName="Gig Logistics"
+                        text="Duplicate of the actual GIG Logistics"
+                        src={"/images/projects/Logistics.png"}
+                        projectUrl="https://gig-logistics.vercel.app/"
                     />
                 </div>
             }
