@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { IoIosClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { BsTelegram, BsTwitterX, BsWhatsapp } from "react-icons/bs";
 import { useRouter } from 'next/router';
 
 const Navbar = () =>  
@@ -26,7 +25,7 @@ const Navbar = () =>
             <Head>
                 <title>Layomi | Home</title>
             </Head>
-            <div className="text-primary border-borderColor border-b border-solid h-[56.19px] flex items-center fixed w-full text-sm bg-bgColor">
+            <div className="text-primary border-borderColor border-b border-solid h-[56.19px] flex items-center fixed w-full text-sm bg-bgColor z-[9999999]">
                 <div className="flex items-center w-full justify-between">
                     <div className="flex items-center">
                         <div className="flex items-center md:w-48 lg:w-56 xl:w-64 2xl:w-72 3xl:w-80 h-14 md:border-borderColor md:border-r md:border-solid">
