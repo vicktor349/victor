@@ -60,7 +60,7 @@ const project = () =>
                         src={"/images/projects/admindashboard.png"}
                         projectUrl="https://administratordash.vercel.app/"
                     />
-                    <ProjectCard projectNumber="2" projectName="Nest Mart-Ecommerce"
+                    <ProjectCard projectNumber="2" projectName="NestMart-Ecommerce"
                         text="An ecommerce application that enables users to browse, buy, and manage products or services online."
                         src={"/images/projects/nestmart.png"}
                         projectUrl="https://nestmart-eight.vercel.app/"
@@ -81,7 +81,7 @@ const project = () =>
                         projectUrl="https://nuntium-zeta.vercel.app/"
                     />
                     <ProjectCard projectNumber="6" projectName="Gig Logistics"
-                        text="Duplicate of the actual GIG Logistics"
+                        text="Duplicate of the actual GIG Logistics website"
                         src={"/images/projects/Logistics.png"}
                         projectUrl="https://gig-logistics.vercel.app/"
                     />
