@@ -4,7 +4,7 @@ const CodeSnippet = () =>
 {
     return (
         <div className='border-t border-borderColor text-sm pt-8'>
-            <div className='w-full grid mx-auto px-10 pb-10 lg:pb-0'>
+            <div className='w-full grid xl:mx-auto px-3 pb-10 lg:pb-0'>
                 <p className="text-lg font-bold">
                     Hit play and let the <span>rhythm of creativity</span> guide you through my portfolio.
                 </p>
