@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { ReactTyped } from 'react-typed'
 
@@ -14,7 +15,12 @@ export default function Home()
               <p className="text-white text-3xl sm:text-4xl 2xl:text-5xl">Segun-Fatolu Layomi</p>
               <p className="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">&gt; <ReactTyped loop strings={["Front-end developer", "Anime Enthusiast", "Game Lover", "Music Lover"]} typeSpeed={40} /></p>
             </div>
-            <section className="space-y-3 mt-24">
+            <div className="mt-10">
+              <Link target="_blank" href="https://docs.google.com/document/d/1JYuWmyvh0xkOqTAWcDgO58qiWugGJ-G6yAyUnGuUN2s/edit?usp=sharing" className="px-6 py-4 font-medium bg-buttonBackground text-white w-fit transition-all shadow-[5px_5px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+                View Resume
+              </Link>
+            </div>
+            <section className="space-y-3 mt-16">
               <p className="text-primary  hidden ssssm:block">// complete the game to continue</p>
               <p className="text-primary  hidden ssssm:block">// you can also see it on my Github page</p>
               <p className="ssm:text-[0.7rem] sssm:text-[0.75rem] ssssm:text-sm sm:text-base">
@@ -32,7 +38,8 @@ export default function Home()
                 src="/images/background-gradient.png"
                 alt="Gradient Image"
                 priority
-                layout="fill"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="relative xl:h-[375px] xl:w-[410px] 2xl:h-[475px] 2xl:w-[510px] border border-borderColor  flex items-center justify-center">
                 {/* Snake Game goes here */}
