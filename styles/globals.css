@@ -7,3 +7,12 @@ body {
   background-color: #011627;
   font-family: 'Fira Code';
 }
+.keyword{
+  color: #5565E8;
+}
+.customwords{
+  color: #C98BDF;
+}
+.event, .dynamic-value{
+  color: #FEA55F;
+}
