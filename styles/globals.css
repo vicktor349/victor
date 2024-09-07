@@ -16,3 +16,23 @@ body {
 .event, .dynamic-value{
   color: #FEA55F;
 }
+.drum-text span {
+display: inline-block;
+animation: drumBeat 1.5s cubic-bezier(0.58, 0, 0.44, 2) infinite;
+}
+
+.drum-text span:nth-child(odd) {
+animation-delay: 0.1s;
+}
+
+@keyframes drumBeat {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(5px);
+}
+100% {
+transform: translateY(0);
+}
+}
