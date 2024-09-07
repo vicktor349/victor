@@ -44,7 +44,7 @@ const Navbar = () =>
                         </div>
                     </div>
                     <div className="hidden md:flex items-center">
-                        <div key={navlinks[3].id} className="border-borderColor border-l w-fit px-5 h-14 flex items-center">
+                        <div key={navlinks[3].id} className="border-borderColor border-l w-fit px-5 h-14 flex items-center" style={{ borderBottom: pathname === navlinks[3].link ? "2px solid #FEA55F" : "none" }}>
                             <Link className="hover:text-white" href={navlinks[3].link}>{navlinks[3].name}</Link>
                         </div>
                     </div>
