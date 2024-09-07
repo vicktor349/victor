@@ -6,14 +6,14 @@ const Bio = () =>
         <div>
             <p> /**</p>
             <p>* BIO</p>
-            <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
-            <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
-            <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
-            <p> * ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
-            <p>* sit amet, consectetur adipisicing elit. Eos, libero fugiat ull-</p>
-            <p>* am, omnis minima officia impedit porro eum cumque voluptatem a-</p>
-            <p> * spernatur, tenetur qui maiores. Assumenda quibusdam consequunt-</p>
-            <p>* ur maxime accusamus nihil.</p>
+            <p>* Hello, I'm Layomi! I'm a self-taught front-end developer</p>
+            <p>* developer based in Abuja, Nigeria. I can develop</p>
+            <p>* responsive websites from scratch and raise them into </p>
+            <p>* modern user-friendly web experiences. Transforming my </p>
+            <p>* creativity and knowledge into websites has been my </p>
+            <p>* passion for 3+ years. I have been helping various</p>
+            <p>* clients to establish their presence online. I always</p>
+            <p>* strive to learn about the newest technologies and frameworks.</p>
             <p>*/</p>
         </div>
     )

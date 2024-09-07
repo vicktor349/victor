@@ -5,15 +5,14 @@ const Next = () =>
     return (
         <div>
             <p> /**</p>
-            <p>* NEXT</p>
-            <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
-            <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
-            <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
-            <p> * ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
-            <p>* sit amet, consectetur adipisicing elit. Eos, libero fugiat ull-</p>
-            <p>* am, omnis minima officia impedit porro eum cumque voluptatem a-</p>
-            <p> * spernatur, tenetur qui maiores. Assumenda quibusdam consequunt-</p>
-            <p>* ur maxime accusamus nihil.</p>
+            <p>* NEXT js</p>
+            <p>* I'm a frontend developer with over 3 years of experience working</p>
+            <p>* with Next.js, specializing in building responsive, user-friendly</p>
+            <p>* websites I'm passionate about creating seamless web experiences</p>
+            <p>* that not only look great but also perform efficiently across all devices.</p>
+            <p>* With a focus on clean code, accessibility, and modern design principles,</p>
+            <p>* I strive to bring concepts to life and enhance user interaction </p>
+            <p>* through intuitive interfaces.</p>
             <p>*/</p>
         </div>
     )

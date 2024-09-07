@@ -6,14 +6,13 @@ const Anime = () =>
         <div>
             <p> /**</p>
             <p>* Anime</p>
-            <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
-            <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
-            <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
-            <p> * ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
-            <p>* sit amet, consectetur adipisicing elit. Eos, libero fugiat ull-</p>
-            <p>* am, omnis minima officia impedit porro eum cumque voluptatem a-</p>
-            <p> * spernatur, tenetur qui maiores. Assumenda quibusdam consequunt-</p>
-            <p>* ur maxime accusamus nihil.</p>
+            <p>* I'm an avid anime enthusiast, with a deep appreciation for</p>
+            <p>* both classic and modern series. </p>
+            <p>* Two of my all-time favorites are Jujutsu Kaisen and The God of High School,</p>
+            <p>* which stand out for their dynamic storytelling, vibrant animation, </p>
+            <p>* and intense action scenes. </p>
+            <p>* Anime not only entertains me but also inspires my creativity</p>
+            <p>* and passion for visual storytelling.</p>
             <p>*/</p>
         </div>
     )

@@ -6,14 +6,13 @@ const Music = () =>
         <div>
             <p> /**</p>
             <p>* MUSIC</p>
-            <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
-            <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
-            <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
-            <p> * ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
-            <p>* sit amet, consectetur adipisicing elit. Eos, libero fugiat ull-</p>
-            <p>* am, omnis minima officia impedit porro eum cumque voluptatem a-</p>
-            <p> * spernatur, tenetur qui maiores. Assumenda quibusdam consequunt-</p>
-            <p>* ur maxime accusamus nihil.</p>
+            <p>* Music plays a big role in my life, serving as a source of</p>
+            <p>* inspiration and creativity. I'm passionate</p>
+            <p>* about exploring various genres, rhythms, and melodies,</p>
+            <p>* ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
+            <p>* which often influence my work and personal </p>
+            <p>* projects. Whether it's creating or coding, music helps</p>
+            <p>* keep me focused and energized.</p>
             <p>*/</p>
         </div>
     )

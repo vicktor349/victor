@@ -6,14 +6,13 @@ const Gaming = () =>
         <div>
             <p> /**</p>
             <p>* GAMING</p>
-            <p>* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,</p>
-            <p>* libero fugiat ullam, omnis minima officia impedit porro eum c-</p>
-            <p>* umque voluptatem aspernatur, tenetur qui maiores. Assumenda qu-</p>
-            <p> * ibusdam consequuntur maxime accusamus nihil.Lorem ipsum dolor</p>
-            <p>* sit amet, consectetur adipisicing elit. Eos, libero fugiat ull-</p>
-            <p>* am, omnis minima officia impedit porro eum cumque voluptatem a-</p>
-            <p> * spernatur, tenetur qui maiores. Assumenda quibusdam consequunt-</p>
-            <p>* ur maxime accusamus nihil.</p>
+            <p>* In my free time, I enjoy playing a variety of games, from </p>
+            <p>* fast-paced FPS titles and competitive FIFA matches to </p>
+            <p>* classic arcade games and immersive open-world adventures.</p>
+            <p>* Gaming is not just a hobby for me but a way to unwind,</p>
+            <p>* stay sharp, and appreciate the intricate design and creativity that go</p>
+            <p>* into building virtual worlds.</p>
+            <p>* a passion that fuels my love for interactive experiences and challenges.</p>
             <p>*/</p>
         </div>
     )
