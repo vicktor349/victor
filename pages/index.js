@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { ReactTyped } from 'react-typed'
 
 export default function Home()
 {
@@ -11,7 +12,7 @@ export default function Home()
             <div className="space-y-3">
               <p className="text-white">Hi all. I am</p>
               <p className="text-white text-3xl sm:text-4xl 2xl:text-5xl">Segun-Fatolu Layomi</p>
-              <p className="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">&gt; Front-end developer</p>
+              <p className="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">&gt; <ReactTyped loop strings={["Front-end developer", "Anime Enthusiast", "Game Lover", "Music Lover"]} typeSpeed={40} /></p>
             </div>
             <section className="space-y-3 mt-24">
               <p className="text-primary  hidden ssssm:block">// complete the game to continue</p>
@@ -33,8 +34,11 @@ export default function Home()
                 priority
                 layout="fill"
               />
-              <div className="relative xl:h-[375px] xl:w-[410px] 2xl:h-[475px] 2xl:w-[510px] border border-borderColor">
+              <div className="relative xl:h-[375px] xl:w-[410px] 2xl:h-[475px] 2xl:w-[510px] border border-borderColor  flex items-center justify-center">
                 {/* Snake Game goes here */}
+                <video autoPlay loop muted playsInline className="w-96 h-96 object-contain">
+                  <source src="/images/coming.webm" type="video/webm" />
+                </video>
               </div>
             </div>
           </div>
