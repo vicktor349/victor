@@ -120,7 +120,7 @@ const ContactMe = () =>
             </div>
 
             {/* Main Content */}
-            <div className="w-full h-screen">
+            <div className="w-full h-[calc(100vh-200px)] lg:h-screen">
                 {/* Header for larger screens */}
                 <div className="border-borderColor border-b w-full h-9 hidden lg:flex items-center text-sm">
                     <p className="pl-5">Contacts</p>
@@ -129,7 +129,7 @@ const ContactMe = () =>
 
                 <div className="lg:grid lg:grid-cols-2 lg:h-[calc(100vh-35px)]">
                     {/* Form Section */}
-                    <div className="flex flex-col justify-center items-center lg:border-r border-borderColor space-y-4 mt-20">
+                    <div className="flex flex-col justify-center items-center lg:border-r border-borderColor space-y-4 mt-20 lg:mt-0">
                         <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
                             <label htmlFor="name" className="mb-2">_name:</label>
                             <input
@@ -162,7 +162,7 @@ const ContactMe = () =>
                                 className="outline-none px-2 py-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[145px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
                             />
                         </div>
-                        <button className="text-white p-2 bg-buttonBackground rounded-lg mt-5">
+                        <button className="text-white p-2 bg-buttonBackground rounded-lg mt-5 self-start mx-4">
                             submit-message
                         </button>
                     </div>
