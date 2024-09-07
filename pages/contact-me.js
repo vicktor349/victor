@@ -162,7 +162,7 @@ const ContactMe = () =>
                                 className="outline-none px-2 py-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[145px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
                             />
                         </div>
-                        <button className="text-white p-2 bg-buttonBackground rounded-lg mt-5 self-start mx-4">
+                        <button className="text-white p-2 bg-buttonBackground rounded-lg mt-5 sm:self-start lg:self-center mx-4">
                             submit-message
                         </button>
                     </div>
