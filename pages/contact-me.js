@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { MdArrowDropDown, MdOutlineArrowRight, MdPhone } from 'react-icons/md';
 import { IoMdMail } from "react-icons/io";
+import emailjs from '@emailjs/browser';
+import { Loader } from '@mantine/core';
+import { notifications } from "@mantine/notifications"
+require("dotenv").config()
+
 
 const ContactMe = () =>
 {
     const [isOpen, setIsOpen] = useState(true);
+    const [success, setSuccess] = useState(true)
+    const [isSubmitting, setIsSubmitting] = useState(false)
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -33,7 +40,7 @@ const ContactMe = () =>
     const event = new Set([
         "#", "sendBtn", "click", "#sendBtn"
     ])
-    const highlightCode = (code, formData) =>
+    const highlightCode = (code) =>
     {
         const regex = new RegExp(`\\$\\{(.*?)\\}`, 'g');
 
@@ -86,6 +93,38 @@ const ContactMe = () =>
 11      form.send(message);
 12  });
     `;
+    const form = useRef()
+
+    const handleSubmit = (e) =>
+    {
+        e.preventDefault();
+        setIsSubmitting(true)
+
+        emailjs
+            .sendForm("service_ti9us81", "template_w45iafh", form.current, {
+                publicKey: "UD7LwokbJKt32q4uk",
+            })
+            .then(
+                () =>
+                {
+                    console.log('SUCCESS!');
+                    setSuccess(true)
+                    notifications.show({ title: "Success", message: "Message sent successfully", color: "green" })
+                },
+                (error) =>
+                {
+                    notifications.show({ title: "Error", message: error, color: "red", bg: "#011221" })
+                    console.log('FAILED...', error.text);
+                },
+            );
+        setIsSubmitting(false)
+
+    };
+    const handleMoreMessages = (e) =>
+    {
+        e.preventDefault()
+        setSuccess(false)
+    }
 
     return (
         <div className="lg:pt-[56.5px] text-primary lg:flex">
@@ -129,47 +168,63 @@ const ContactMe = () =>
 
                 <div className="lg:grid lg:grid-cols-2 lg:h-[calc(100vh-35px)]">
                     {/* Form Section */}
-                    <div className="flex flex-col justify-center items-center lg:border-r border-borderColor space-y-4 mt-20 lg:mt-0">
-                        <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
-                            <label htmlFor="name" className="mb-2">_name:</label>
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                value={formData.name}
-                                onChange={handleInputChange}
-                                className="outline-none px-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[41px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
-                            />
+                    {success ?
+                        <div className='text-base sm:text-lg flex flex-col justify-center items-center  lg:border-r border-borderColor space-y-4 mt-24 lg:mt-0'>
+                            <p>Thank you! 🤘</p>
+                            <p>Your message has been accepted. You</p>
+                            <p>will recieve answer really soon!</p>
+                            <button onClick={handleMoreMessages} className="text-white p-2 bg-buttonBackground rounded-lg mt-5 sm:self-start lg:self-center mx-4">
+                                send-new-message
+                            </button>
                         </div>
-                        <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
-                            <label htmlFor="email" className="mb-2">_email:</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                className="outline-none px-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[41px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
-                            />
-                        </div>
-                        <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
-                            <label htmlFor="message" className="mb-2">_message:</label>
-                            <textarea
-                                name="message"
-                                id="message"
-                                value={formData.message}
-                                onChange={handleInputChange}
-                                className="outline-none px-2 py-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[145px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
-                            />
-                        </div>
-                        <button className="text-white p-2 bg-buttonBackground rounded-lg mt-5 sm:self-start lg:self-center mx-4">
-                            submit-message
-                        </button>
-                    </div>
+                        :
+                        <form ref={form} onSubmit={handleSubmit} className="flex flex-col justify-center items-center lg:border-r border-borderColor space-y-4 mt-20 lg:mt-0">
+                            <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
+                                <label htmlFor="name" className="mb-2">_name:</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    value={formData.name}
+                                    required
+                                    onChange={handleInputChange}
+                                    className="outline-none px-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[41px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
+                                />
+                            </div>
+                            <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
+                                <label htmlFor="email" className="mb-2">_email:</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                    className="outline-none px-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[41px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
+                                />
+                            </div>
+                            <div className="flex flex-col w-full lg:w-fit px-4 sm:px-10">
+                                <label htmlFor="message" className="mb-2">_message:</label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    required
+                                    value={formData.message}
+                                    onChange={handleInputChange}
+                                    className="outline-none px-2 py-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[145px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
+                                />
+                            </div>
+                            <button className="text-white w-48 h-10 flex items-center justify-center p-2 bg-buttonBackground rounded-lg mt-5 sm:self-start lg:self-center mx-4" disabled={isSubmitting}>
+                                {isSubmitting ? <Loader color="white" size={20} /> : "submit-message"}
+                            </button>
+                        </form>
+                    }
 
                     {/* Code Preview */}
                     <div className="hidden lg:flex flex-col justify-center mx-auto lg:text-[0.7rem] xl:w-[28.4 rem] xl:text-sm">
-                        {highlightCode(code)}
+                        <div className="w-[500px]">
+                            {highlightCode(code)}
+                        </div>
                     </div>
                 </div>
             </div>
