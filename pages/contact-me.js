@@ -10,7 +10,7 @@ require("dotenv").config()
 const ContactMe = () =>
 {
     const [isOpen, setIsOpen] = useState(true);
-    const [success, setSuccess] = useState(true)
+    const [success, setSuccess] = useState(false)
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [formData, setFormData] = useState({
         name: "",
@@ -214,7 +214,7 @@ const ContactMe = () =>
                                     className="outline-none px-2 py-2 border-2 border-solid bg-cardBackground border-borderColor rounded-lg h-[145px] lg:w-[320px] xl:w-[372px] text-[#465E77]"
                                 />
                             </div>
-                            <button className="text-white w-48 h-10 flex items-center justify-center p-2 bg-buttonBackground rounded-lg mt-5 sm:self-start lg:self-center mx-4" disabled={isSubmitting}>
+                            <button className="text-white w-48 h-10 flex items-center justify-center p-2 bg-buttonBackground rounded-lg mt-5" disabled={isSubmitting}>
                                 {isSubmitting ? <Loader color="white" size={20} /> : "submit-message"}
                             </button>
                         </form>
