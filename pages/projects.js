@@ -54,7 +54,7 @@ const project = () =>
                 }
             </div>
             {checked &&
-                <div className="w-fit grid gap-y-10 md:grid-cols-2 2xl:gap-y-0 2xl:grid-cols-3 gap-x-10 lg:gap-x-5 xl:gap-x-10 mx-5 sm:px-5 md:px-0 sm:mx-auto pt-20 pb-20 2xl:pb-0">
+                <div className="w-fit grid md:grid-cols-2 2xl:gap-y-10 2xl:grid-cols-3 gap-x-10 lg:gap-x-5 xl:gap-x-10 mx-5 sm:px-5 md:px-0 sm:mx-auto pt-20 pb-20 2xl:pb-0">
                     <ProjectCard projectNumber="1" projectName="Admin Dashboard"
                         text="The dashboard displays key metrics, recent orders, and top sales platforms"
                         src={"/images/projects/admindashboard.png"}
