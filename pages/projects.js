@@ -88,7 +88,7 @@ const project = () =>
                     <ProjectCard projectNumber="7" projectName="Hangman"
                         text="Hangman game - TypeScript, Tailwind & ReactJS"
                         src={"/images/projects/hangman.png"}
-                        projectUrl="https://gig-logistics.vercel.app/"
+                        projectUrl="https://hangmangame-pi.vercel.app/"
                     />
                 </div>
             }
