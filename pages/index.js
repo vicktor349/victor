@@ -11,12 +11,12 @@ export default function Home()
         <div className="xl:flex xl:items-center xl:gap-x-32">
           <div className="w-full">
             <div className="space-y-3">
-              <p className="text-white">Hi all. I am</p>
+              <p className="text-white">Hi all, I am</p>
               <p className="text-white text-3xl sm:text-4xl 2xl:text-5xl">Segun-Fatolu Layomi</p>
               <p className="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">&gt; <ReactTyped loop strings={["Front-end developer", "Anime Enthusiast", "Game Lover", "Music Lover"]} typeSpeed={40} /></p>
             </div>
             <div className="mt-10">
-              <Link target="_blank" href="https://docs.google.com/document/d/1JYuWmyvh0xkOqTAWcDgO58qiWugGJ-G6yAyUnGuUN2s/edit?usp=sharing" className="px-6 py-4 font-medium bg-buttonBackground text-white w-fit transition-all shadow-[5px_5px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+              <Link target="_blank" href="https://docs.google.com/document/d/1rab7Q2lB8RrfNUp5FaOseku4nvJFYDjOySaUWs5htXk/edit?usp=sharing" className="px-6 py-4 font-medium bg-buttonBackground text-white w-fit transition-all shadow-[5px_5px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
                 View Resume
               </Link>
             </div>
@@ -27,7 +27,9 @@ export default function Home()
                 <span className="text-secondary">const </span>
                 <span className="text-accent">githubLink </span>
                 <span className="text-white">= </span>
-                <span className="text-secondaryAccent underline hover:cursor-pointer">“https://github.com/example/url”</span>
+                <Link href="https://github.com/vicktor349" target='_blank'>
+                  <span className="text-secondaryAccent underline hover:cursor-pointer">“https://github.com/vicktor349”</span>
+                </Link>
               </p>
             </section>
           </div>
